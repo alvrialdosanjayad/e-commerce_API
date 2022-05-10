@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "c622522a-2e8b-40e9-8349-447f0a3037f6",
+		"name": "Kategori",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Kategori tampil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/kategori/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"kategori",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kategori create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"iconName\": \"coba4\",\r\n    \"iconText\": \"coba3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/kategori/create",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"kategori",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kategori update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"iconName\": \"coba2\",\r\n    \"iconText\": \"coba2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/kategori/update/61bb7693570e4f141b34a4b2",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"kategori",
+						"update",
+						"61bb7693570e4f141b34a4b2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "bdbd0f99-2025-4db5-9e90-51629dcd0242",
+		"name": "Paroki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Paroki tampil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/paroki/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"paroki",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

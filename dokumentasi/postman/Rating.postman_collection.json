@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "d0337e48-bf8e-449d-95aa-a099bd12fabe",
+		"name": "Rating",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rating tampil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2LWVjb21tZXJjZS1hcGkucGFyb2tpLWdtYWtsYXRlbi53ZWIuaWRcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA4ODMwMjQsIm5iZiI6MTY0MDg4MzAyNCwianRpIjoiRVlTUGxPSE1kYXdPcllWMyIsInN1YiI6IjYxYWY3YWVjMDY5NWU0M2M0NjEwYzFiMiIsInBydiI6IjFhMjc0NzZmM2U3OWQyZTUwZjBkYjdhOGQwOTdhZmJlNWMxZjJlYzgifQ.Y8miBRWsJTTMWDJdUfbKG01zSoVjQH1x78PdXa1fNm8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/rating/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"rating",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating tampil by user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2LWVjb21tZXJjZS1hcGkucGFyb2tpLWdtYWtsYXRlbi53ZWIuaWRcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA4ODMwMjQsIm5iZiI6MTY0MDg4MzAyNCwianRpIjoiRVlTUGxPSE1kYXdPcllWMyIsInN1YiI6IjYxYWY3YWVjMDY5NWU0M2M0NjEwYzFiMiIsInBydiI6IjFhMjc0NzZmM2U3OWQyZTUwZjBkYjdhOGQwOTdhZmJlNWMxZjJlYzgifQ.Y8miBRWsJTTMWDJdUfbKG01zSoVjQH1x78PdXa1fNm8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/rating/user/621cff5fcbd76038711626d2/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"rating",
+						"user",
+						"621cff5fcbd76038711626d2",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating tampil by Lapak",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0NDMyOTU5NCwibmJmIjoxNjQ0MzI5NTk0LCJqdGkiOiJlUFFiMlBab0hBS2FzMXU0Iiwic3ViIjoiNjIwMjQzMTllYjcwZWQzZDExNzM3YjMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.AeQUABPVc6YSI0pejWcOILZ0zzIEClPZMxrGpl_kkss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/rating/lapak/621db77393557679fd78bf92/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"rating",
+						"lapak",
+						"621db77393557679fd78bf92",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating tampil by produk",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2LWVjb21tZXJjZS1hcGkucGFyb2tpLWdtYWtsYXRlbi53ZWIuaWRcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA4ODMwMjQsIm5iZiI6MTY0MDg4MzAyNCwianRpIjoiRVlTUGxPSE1kYXdPcllWMyIsInN1YiI6IjYxYWY3YWVjMDY5NWU0M2M0NjEwYzFiMiIsInBydiI6IjFhMjc0NzZmM2U3OWQyZTUwZjBkYjdhOGQwOTdhZmJlNWMxZjJlYzgifQ.Y8miBRWsJTTMWDJdUfbKG01zSoVjQH1x78PdXa1fNm8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/rating/produk/620e1a43fe477e6faa1d22d2/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"rating",
+						"produk",
+						"620e1a43fe477e6faa1d22d2",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0NDMyOTU5NCwibmJmIjoxNjQ0MzI5NTk0LCJqdGkiOiJlUFFiMlBab0hBS2FzMXU0Iiwic3ViIjoiNjIwMjQzMTllYjcwZWQzZDExNzM3YjMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.AeQUABPVc6YSI0pejWcOILZ0zzIEClPZMxrGpl_kkss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "produk_id",
+							"value": "622df5c262ed3736ff769552",
+							"type": "text"
+						},
+						{
+							"key": "transaksi_id",
+							"value": "622df8e8a019402d5a3b1f62",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "622c2c6d08e6fd0cbb5a40d2",
+							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "catatan",
+							"value": "LUMAYAN",
+							"type": "text"
+						},
+						{
+							"key": "gambar_rating",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/rating/create",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"rating",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating update status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status_rating\": \"VERIFIED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/rating/update/622df93b4c5d014b073e9692",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"rating",
+						"update",
+						"622df93b4c5d014b073e9692"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

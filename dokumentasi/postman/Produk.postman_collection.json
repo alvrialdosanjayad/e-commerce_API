@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "7340d9ca-8b6b-41d4-bedb-c37010dcb605",
+		"name": "Produk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Produk tampil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/produk/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"produk",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produk detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/produk/detail/622ca2e914c2c90c9a3a40c2/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"produk",
+						"detail",
+						"622ca2e914c2c90c9a3a40c2",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produk search & filter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"search\": \"\",\r\n    \"id_paroki\": \"\",\r\n    \"id_kategori\": \"\",\r\n    \"min_harga\": \"\",\r\n    \"max_harga\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecommerce-api.paroki-gmaklaten.web.id/api/produk/search-filter",
+					"protocol": "https",
+					"host": [
+						"ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"produk",
+						"search-filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produk create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lapak_id",
+							"value": "622df568ad74db4e1c626df2",
+							"type": "text"
+						},
+						{
+							"key": "kategori_id",
+							"value": "622df4e10a9ec909b1a8d48c",
+							"type": "text"
+						},
+						{
+							"key": "nama_produk",
+							"value": "Beras 2",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi_produk",
+							"value": "beras beras beras",
+							"type": "text"
+						},
+						{
+							"key": "berat_produk",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "harga_produk",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "stok_produk",
+							"value": "300",
+							"type": "text"
+						},
+						{
+							"key": "kondisi_produk",
+							"value": "baru",
+							"type": "text"
+						},
+						{
+							"key": "keamanan_produk",
+							"value": "aman",
+							"type": "text"
+						},
+						{
+							"key": "merek_produk",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "variasi_produk",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gambar_produk[]",
+							"type": "file",
+							"src": "/D:/Wallpaper/pencils_yin_yang_macro_183272_1366x768.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/produk/create",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"produk",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produk update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "gambar_produk[]",
+							"type": "file",
+							"src": "/D:/Wallpaper/wallpapersden.com_sea-of-thieves-game-4k_4096x2160.jpg"
+						},
+						{
+							"key": "kategori_id",
+							"value": "61af1fe7ac646e46c24fec9c",
+							"type": "text"
+						},
+						{
+							"key": "nama_produk",
+							"value": "Beras kk",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi_produk",
+							"value": "beras beras beras",
+							"type": "text"
+						},
+						{
+							"key": "berat_produk",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "harga_produk",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "stok_produk",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "kondisi_produk",
+							"value": "baru",
+							"type": "text"
+						},
+						{
+							"key": "keamanan_produk",
+							"value": "aman",
+							"type": "text"
+						},
+						{
+							"key": "merek_produk",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "variasi_produk[]",
+							"value": "null",
+							"type": "text"
+						},
+						{
+							"key": "hapus_gambar[]",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ecommerce-api.paroki-gmaklaten.web.id/api/produk/update/6209222f3a005a0616063ac2",
+					"protocol": "http",
+					"host": [
+						"ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"produk",
+						"update",
+						"6209222f3a005a0616063ac2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

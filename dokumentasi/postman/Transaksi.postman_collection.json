@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "bc1abe1b-792c-472c-9bbd-fc54d80f80ff",
+		"name": "Transaksi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Transaksi tampil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2LWVjb21tZXJjZS1hcGkucGFyb2tpLWdtYWtsYXRlbi53ZWIuaWRcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA4ODMwMjQsIm5iZiI6MTY0MDg4MzAyNCwianRpIjoiRVlTUGxPSE1kYXdPcllWMyIsInN1YiI6IjYxYWY3YWVjMDY5NWU0M2M0NjEwYzFiMiIsInBydiI6IjFhMjc0NzZmM2U3OWQyZTUwZjBkYjdhOGQwOTdhZmJlNWMxZjJlYzgifQ.Y8miBRWsJTTMWDJdUfbKG01zSoVjQH1x78PdXa1fNm8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/transaksi/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"transaksi",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaksi tampil by user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2LWVjb21tZXJjZS1hcGkucGFyb2tpLWdtYWtsYXRlbi53ZWIuaWRcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA4ODMwMjQsIm5iZiI6MTY0MDg4MzAyNCwianRpIjoiRVlTUGxPSE1kYXdPcllWMyIsInN1YiI6IjYxYWY3YWVjMDY5NWU0M2M0NjEwYzFiMiIsInBydiI6IjFhMjc0NzZmM2U3OWQyZTUwZjBkYjdhOGQwOTdhZmJlNWMxZjJlYzgifQ.Y8miBRWsJTTMWDJdUfbKG01zSoVjQH1x78PdXa1fNm8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/transaksi/user/123/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"transaksi",
+						"user",
+						"123",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaksi tampil by lapak",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2LWVjb21tZXJjZS1hcGkucGFyb2tpLWdtYWtsYXRlbi53ZWIuaWRcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA4ODMwMjQsIm5iZiI6MTY0MDg4MzAyNCwianRpIjoiRVlTUGxPSE1kYXdPcllWMyIsInN1YiI6IjYxYWY3YWVjMDY5NWU0M2M0NjEwYzFiMiIsInBydiI6IjFhMjc0NzZmM2U3OWQyZTUwZjBkYjdhOGQwOTdhZmJlNWMxZjJlYzgifQ.Y8miBRWsJTTMWDJdUfbKG01zSoVjQH1x78PdXa1fNm8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/transaksi/lapak/622df568ad74db4e1c626df2/get",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"transaksi",
+						"lapak",
+						"622df568ad74db4e1c626df2",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaksi update status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2LWVjb21tZXJjZS1hcGkucGFyb2tpLWdtYWtsYXRlbi53ZWIuaWRcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA4ODMwMjQsIm5iZiI6MTY0MDg4MzAyNCwianRpIjoiRVlTUGxPSE1kYXdPcllWMyIsInN1YiI6IjYxYWY3YWVjMDY5NWU0M2M0NjEwYzFiMiIsInBydiI6IjFhMjc0NzZmM2U3OWQyZTUwZjBkYjdhOGQwOTdhZmJlNWMxZjJlYzgifQ.Y8miBRWsJTTMWDJdUfbKG01zSoVjQH1x78PdXa1fNm8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/transaksi/update-status/622df8e8a019402d5a3b1f62",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"transaksi",
+						"update-status",
+						"622df8e8a019402d5a3b1f62"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2022 at 07:39 AM
+-- Generation Time: May 10, 2022 at 06:37 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.26
 
@@ -20,6 +20,33 @@ SET time_zone = "+00:00";
 --
 -- Database: `e-commerce_user`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `paroki`
+--
+
+CREATE TABLE `paroki` (
+  `id` int(11) NOT NULL,
+  `nama_paroki` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `paroki`
+--
+
+INSERT INTO `paroki` (`id`, `nama_paroki`) VALUES
+(1, 'Santa Maria Ratu Bayat'),
+(2, 'Santa Maria Assumpta Cawas'),
+(3, 'Santa Perawan Maria Diangkat Ke Surga Dalem'),
+(4, 'Santo Yohanes Rasul Delanggu'),
+(5, 'Santo Yusuf Pekerja Gondangwinangun'),
+(6, 'Santa Theresia Jombor'),
+(7, 'Roh Kudus Kebonarum'),
+(8, 'Santo Ignatius Ketandan'),
+(9, 'Santa Maria Assumpta Klaten'),
+(10, 'Santa Maria Bunda Kristus Wedi');
 
 -- --------------------------------------------------------
 
@@ -47,6 +74,12 @@ INSERT INTO `user` (`id`, `nama`, `email`, `password`, `client_id`) VALUES
 --
 
 --
+-- Indexes for table `paroki`
+--
+ALTER TABLE `paroki`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -55,6 +88,12 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `paroki`
+--
+ALTER TABLE `paroki`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user`

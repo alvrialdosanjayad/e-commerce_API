@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "882f9cb5-9e94-47fd-a0ec-ab98f594c4a3",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"coba1@test.com\",\r\n    \"password\": \"12345678\",\r\n    \"type\": \"manual\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODE5OTM2NywibmJmIjoxNjM4MTk5MzY3LCJqdGkiOiJmeVVsSjNDczhZY2lYRVQxIiwic3ViIjoiNjE4ZDJhNjMwOGZkZmMxZjMzMmI3NzAyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.oZknijhDlY5O6QP6LdHX8lLL0LcH81gAx8w6lHM6WSY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYtZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0NjkwNzQxOCwibmJmIjoxNjQ2OTA3NDE4LCJqdGkiOiJrN1l2OGROVTNCUUdFVGJMIiwic3ViIjoiNjIyOTdhNTc5NDNlYTgwYzQ1MjA1MjgyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.7xQy75M-gYeBwDlhlPvfD4dagMa6VqlBAjRrF_RnrHM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/auth/logout",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0NTQxMjgxOCwibmJmIjoxNjQ1NDEyODE4LCJqdGkiOiJqM0ozeGJ1WXhoMW9JejJ6Iiwic3ViIjoiNjIwMjQzMTllYjcwZWQzZDExNzM3YjMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.3NOn8VA46IS31MdEXL6he5U_p31JoZjvAmd87jeIdfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/auth/refresh-token",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"auth",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Nomor Telepon",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZWNvbW1lcmNlLWFwaS5wYXJva2ktZ21ha2xhdGVuLndlYi5pZFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzODYyNDU0MywibmJmIjoxNjM4NjI0NTQzLCJqdGkiOiJhd09udTNpTExKNUFYTTloIiwic3ViIjoiNjE1ZGFmNzQyMGUxMTYwNDE0NGY3NTMyIiwicHJ2IjoiMWEyNzQ3NmYzZTc5ZDJlNTBmMGRiN2E4ZDA5N2FmYmU1YzFmMmVjOCJ9.9CqCqR_yNc-97cECqIPcoK-bsG_G1chUnKwJiranGP0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"no_telepon\": \"0811111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-ecommerce-api.paroki-gmaklaten.web.id/api/auth/update/nomor-telepon/62024319eb70ed3d11737b32",
+					"protocol": "https",
+					"host": [
+						"dev-ecommerce-api",
+						"paroki-gmaklaten",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update",
+						"nomor-telepon",
+						"62024319eb70ed3d11737b32"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
