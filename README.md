@@ -9,3 +9,5 @@
 
 REST API E-COMMERCE
 ===================
+
+REST API E-COMMERCE dibuat dengan Framework Laravel 8 dan menggunakan database MongoDB dan MYSQL
