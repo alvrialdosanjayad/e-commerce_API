@@ -91,35 +91,35 @@ return [
             'prefix_indexes' => true,
         ],
 
-        /* MongoDB server */
+        /* MONGODB SERVER */
         // 'mongodb' => [
         //     'driver' => 'mongodb',
         //     'dsn' => 'mongodb+srv://aldo_user:1qa2w3ed4r@cluster0.kojmn.mongodb.net/e-commerce?retryWrites=true&w=majority',
         //     'database' => 'e-commerce',
         // ],
 
-        /* MongoDB lokal */
-        // 'mongodb' => [
-        //     'driver' => 'mongodb',
-        //     'host' => '127.0.0.1',
-        //     'port' => 27017,
-        //     'database' => 'e-commerce',
-        //     'username' => '',
-        //     'password' => '',
-        //     'options' => [
-        //         // here you can pass more settings to the Mongo Driver Manager
-        //         // see https://www.php.net/manual/en/mongodb-driver-manager.construct.php under "Uri Options" for a list of complete parameters that you can use
-
-        //         'database' => 'admin', // required with Mongo 3+
-        //     ],
-        // ],
-
-        /* MongoDB server hosting */
+        /* MONGODB LOKAL*/
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => 'mongodb://parokigm:12345678@%2Fhome%2Fparokigm%2Fmongodb-0.sock/e-commerce?authSource=admin',
+            'host' => '127.0.0.1',
+            'port' => 27017,
             'database' => 'e-commerce',
+            'username' => '',
+            'password' => '',
+            'options' => [
+                // here you can pass more settings to the Mongo Driver Manager
+                // see https://www.php.net/manual/en/mongodb-driver-manager.construct.php under "Uri Options" for a list of complete parameters that you can use
+
+                'database' => 'admin', // required with Mongo 3+
+            ],
         ],
+
+        /* MONGODB SERVER HOSTING (DomaiNesia) */
+        // 'mongodb' => [
+        //     'driver' => 'mongodb',
+        //     'dsn' => 'mongodb://parokigm:12345678@%2Fhome%2Fparokigm%2Fmongodb-0.sock/e-commerce?authSource=admin',
+        //     'database' => 'e-commerce',
+        // ],
 
     ],
 
