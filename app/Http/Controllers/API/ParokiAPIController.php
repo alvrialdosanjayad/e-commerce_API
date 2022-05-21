@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Lapak;
 use App\Models\Paroki;
 use App\Models\ParokiMysql;
-use Illuminate\Http\Request;
 
 class ParokiAPIController extends Controller
 {

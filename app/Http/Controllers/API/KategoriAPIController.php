@@ -40,7 +40,7 @@ class KategoriAPIController extends Controller
     {
         #VALIDATE KATEGORI REQUEST
         $kategoriValidate = Validator::make($request->all(), [
-            'iconName' => 'required|unique:App\Models\Kategori,iconName',
+            'iconName' => 'required|max:15|unique:App\Models\Kategori,iconName',
             'iconText' => 'required'
         ]);
 
@@ -63,7 +63,7 @@ class KategoriAPIController extends Controller
 
         # VALIDATE KATEGORI REQUEST
         $kategoriValidate = Validator::make($request->all(), [
-            'iconName' => 'required|unique:App\Models\Kategori,iconName,' . $kategori_id,
+            'iconName' => 'required|max:15|unique:App\Models\Kategori,iconName,' . $kategori_id,
             'iconText' => 'required'
         ]);
 

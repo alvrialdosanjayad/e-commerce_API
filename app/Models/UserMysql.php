@@ -12,22 +12,6 @@ class UserMysql extends Model
     public $timestamps = false;
     protected $table = 'user';
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'nama',
-        'email',
-        'password',
-        'client_id',
-        'nik',
-        'nomor_telepon',
-        'verification_token',
-        'email_verified_at'
-    ];
-
     protected $hidden = [
         'password'
     ];
