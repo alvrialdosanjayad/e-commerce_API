@@ -10,4 +10,4 @@
 REST API E-COMMERCE
 ===================
 
-REST API E-COMMERCE dibuat dengan Framework Laravel 8 dan menggunakan database MongoDB dan MYSQL
+REST API E-COMMERCE dibuat dengan Framework Laravel 8 dan menggunakan database MongoDB dan MYSQL. Service ini digunakan untuk pada website <a href="https://github.com/kukuhnugrh/Maten-Gematen">Mande Gematen</a>
