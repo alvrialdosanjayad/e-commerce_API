@@ -10,10 +10,15 @@
 REST API E-COMMERCE
 ===================
 
-REST API E-COMMERCE dibuat dengan Framework Laravel 8 dan menggunakan database MongoDB dan MYSQL. Service ini digunakan untuk website <a href="https://github.com/kukuhnugrh/Maten-Gematen" target="_blank">Mande Gematen</a>
+REST API E-COMMERCE dibuat dengan Framework Laravel 8 dengan versi PHP 7.4.26 yang digunakan untuk website <a href="https://github.com/kukuhnugrh/Maten-Gematen">Mande Gematen</a>
 
 Setup
 ------------
 
-- Pastikan driver MongoDB PHP sudah terinstall (rekomendasi versi 1.8.0). Untuk panduan menginstall dapat melihat http://php.net/manual/en/mongodb.installation.php
-- 
+- Menginstall server MongoDB. Panduan menginstall dapat melihat https://www.mongodb.com/docs/v4.4/installation/
+- Menginstall driver MongoDB PHP minimal versi 1.8.1. Panduan menginstall dapat melihat http://php.net/manual/en/mongodb.installation.php
+- Clone project dari github
+- Jalankan perintah `composer require jenssegers/mongodb:3.8.4` dengan terminal pada folder yang sudah di clone sebelumnya untuk menggunakan package dari https://github.com/jenssegers/laravel-mongodb
+- Jalankan `cp .env.example .env` dan lakukan pengaturan database Mysql pada `.env`. Import file database dari folder `dokumentasi/e-commerce_user.sql`
+- Jalankan `php artisan config:cache`
+- Jalankan `php artisan key:generate`
